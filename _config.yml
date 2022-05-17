@@ -2,7 +2,7 @@ title: Lady Knight
 logo: http://danaamundsen.site44.com/ladyknight/logo.png
 description: Unicorns and talking cats and lots of magic sparkles.
 paginate: 1
-paginate_path: "/webcomic/page:num/"
+paginate_path: "/page:num/"
 permalink: none
 show_downloads: false
 # google_analytics:
