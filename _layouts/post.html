@@ -7,7 +7,7 @@ layout: default
 
 {{content}}
 
- <small> date: {{ page.date | date: "%D" }} | 
+ | 
  
   {% if post %}
     {% assign tags = post.tags %}
@@ -21,11 +21,11 @@ layout: default
 
 <p align="right">
     {% if page.previous.url %}
-    <a href="{{page.previous.url}}">previous</a> / 
+    <a href="{{page.previous.url}}">previous page</a> / 
     {% endif %}
 
     {% if page.next.url %}
-    <a href="{{page.next.url}}">next</a>
+    <a href="{{page.next.url}}">next page</a>
     {% endif %}
 </p>
 <!--- {{page.previous.title}} {{page.next.title}}--->
