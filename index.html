@@ -12,7 +12,7 @@ layout: default
         {{ post.content }}
       </div>
 
-      <small><a href="{{ site.baseurl }}{{ post.url }}" class="read-more">permalink</a> | 
+   <!-- post data   <small><a href="{{ site.baseurl }}{{ post.url }}" class="read-more">permalink</a> | 
  
   {% if post %}
     {% assign tags = post.tags %}
@@ -23,10 +23,9 @@ layout: default
   tags: <a href="{{site.baseurl}}/tags/#{{tag|slugize}}">{{tag}}</a></small>
   {% unless forloop.last %}&nbsp;{% endunless %}
   {% endfor %}
-
+-->
       
     </article>
-  <hr></hr>
   {% endfor %}
   
 </div>
