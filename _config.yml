@@ -1,1 +1,14 @@
+title: webcomic template
+# logo: /assets/img/logo.png
+description: subtitle
+paginate: 1
+paginate_path: "/webcomic/page:num/"
+show_downloads: false
+# google_analytics:
 theme: jekyll-theme-minimal
+plugins: 
+  - jekyll-paginate
+  - jekyll-feed
+gems:
+  - jekyll-paginate
+  - jekyll-feed
