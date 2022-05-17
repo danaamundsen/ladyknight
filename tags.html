@@ -1,0 +1,28 @@
+---
+layout: default
+permalink: /tags/
+title: tags
+---
+
+<h2>tags</h2>
+
+<div class="tags-expo">
+  <div class="tags-expo-list">
+   - {% for tag in site.tags %}
+     <a href="#{{ tag[0] | slugify }}" class="post-tag">{{ tag[0] }}</a> - 
+    {% endfor %}
+  </div>
+<p></p>
+  <div class="tags-expo-section">
+    {% for tag in site.tags %}
+    <p id="{{ tag[0] | slugify }}"><b>{{ tag[0] }}</b></p>
+    <ul class="tags-expo-posts">
+      {% for post in tag[1] %}
+      <li>
+        <a class="post-title" href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a> - {{ post.date | date: "%D" }}
+      </li>
+      {% endfor %}
+    </ul>
+    {% endfor %}
+  </div>
+</div>
