@@ -3,13 +3,11 @@ layout: default
 ---
 
 
-<h2>{{ page.title }}</h2>
+<!--post title <h2>{{ page.title }}</h2> -->
 
 {{content}}
-
- | 
  
-  {% if post %}
+<!-- show tags  {% if post %}
     {% assign tags = post.tags %}
   {% else %}
     {% assign tags = page.tags %}
@@ -18,6 +16,7 @@ layout: default
   tags: <a href="{{site.baseurl}}/tags/#{{tag|slugize}}">{{tag}}</a></small>
   {% unless forloop.last %}&nbsp;{% endunless %}
   {% endfor %}
+-->
 
 <p align="right">
     {% if page.previous.url %}
